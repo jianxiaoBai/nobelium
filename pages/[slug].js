@@ -10,7 +10,7 @@ const BlogPost = ({ post, blockMap, emailHash }) => {
       blockMap={blockMap}
       frontMatter={post}
       emailHash={emailHash}
-      fullWidth={post.fullWidth}
+      fullWidth={true}
     />
   )
 }
