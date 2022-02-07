@@ -22,7 +22,7 @@ const BLOG = {
     keywords: ['Blog', 'Website', 'Notion'],
     googleSiteVerification: '', // Remove the value or replace it with your own google site verification code
   },
-  notionPageId: '62b606dab97b44af92957194b8a0fcc2', // DO NOT CHANGE THIS！！！
+  notionPageId: process.env.NOTION_PAGE_ID, // DO NOT CHANGE THIS！！！
   notionAccessToken: process.env.NOTION_ACCESS_TOKEN, // Useful if you prefer not to make your database public
   analytics: {
     provider: '', // Currently we support Google Analytics and Ackee, please fill with 'ga' or 'ackee', leave it empty to disable it.

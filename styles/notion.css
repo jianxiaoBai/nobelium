@@ -11,6 +11,8 @@
   @apply leading-8;
   @apply p-0;
   @apply my-3;
+  line-height: 1.5rem;
+  color: black;
 }
 .notion-page-link {
   color: inherit;
