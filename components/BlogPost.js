@@ -1,6 +1,7 @@
-import BLOG from '@/blog.config';
-import formatDate from '@/lib/formatDate';
+import BLOG from '@/blog.config'
+import formatDate from '@/lib/formatDate'
 import { uuidToId } from 'notion-utils'
+
 const BlogPost = ({ post }) => {
   return (
     <a href={`https://hyper-equipment-08f.notion.site/${uuidToId(post.id)}`}>
@@ -10,10 +11,7 @@ const BlogPost = ({ post }) => {
             {post.title}
           </h2>
           <time className="flex-shrink-0 text-gray-600 dark:text-gray-400">
-            {formatDate(
-              post?.date?.start_date || post.createdTime,
-              BLOG.lang
-            )}
+            {formatDate(post?.date?.start_date || post.createdTime, BLOG.lang)}
           </time>
         </header>
         <main>
@@ -23,7 +21,7 @@ const BlogPost = ({ post }) => {
         </main>
       </article>
     </a>
-  );
-};
+  )
+}
 
-export default BlogPost;
+export default BlogPost
